@@ -1,10 +1,10 @@
 const datosConexion = {
 	bd: 'credionline',
-	usuario: 'postgres',
-	contrasena: 'essam2018',
+	usuario: 'root',
+	contrasena: 'clinton1998',
 	direccion: {
 		host: 'localhost',
-		dialect: 'postgres',
+		dialect: 'mysql',
 		define:{
 			timestamps: false
 		}
