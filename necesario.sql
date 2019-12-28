@@ -16,7 +16,7 @@ CREATE TABLE SIS_M_CLIENTES(
     cApellido_materno VARCHAR(50) NOT NULL,
     cEmail VARCHAR(60) NOT NULL,
     cTelefono VARCHAR(20) NOT NULL,
-    nCodigo_distrito INT NOT NULL,
+    nCodigo_distrito INT,
     cDomicilio VARCHAR(70) NOT NULL,
     cEstado VARCHAR(1) NOT NULL DEFAULT 'A',
     tCreacion TIMESTAMP NOT NULL DEFAULT NOW(),
