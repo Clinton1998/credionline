@@ -1,0 +1,130 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-1">
+		<div id="contenidoTemporal">
+			<div  class="panel panel-default">
+			<div class="panel-heading">
+				<h4>Mis datos guardados</h4>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-bordered table-condensed" id="tablaDatosGuardados">
+						<input type="" name=""  id="codigoEmpresaAntiguo" hidden>
+						<tr>
+							<td>Telefono movil</td>
+							<td id="tdModTelefonoMovil"></td>
+						</tr>
+						<tr>
+							<td>Departamento</td>
+							<td id="tdModDepartamento"></td>
+						</tr>
+						<tr>
+							<td>Provincia</td>
+							<td id="tdModProvincia"></td>
+						</tr>
+						<tr>
+							<td>Distrito</td>
+							<td id="tdModDistrito"></td>
+						</tr>
+						<tr>
+							<td>Domicilio</td>
+							<td id="tdModDomicilio"></td>
+						</tr>
+						<tr>
+							<td>RUC</td>
+							<td id="tdModRuc"></td>
+						</tr>
+						<tr>
+							<td>Nombre de empresa</td>
+							<td id="tdModNombreEmpresa"></td>
+						</tr>
+						<tr>
+							<td>Salario mensual</td>
+							<td id="tdModSalario"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-4" id="contenidoParaFormulario">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3>¿Quieres modificar tus datos?</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<button type="button" class="btn btn-success btn-block btn-lg" id="btn-respuesta-si">SI</button>
+					</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-danger btn-block btn-lg" id="btn-respuesta-no">NO</button>
+					</div>
+				</div>
+			
+			</div>
+
+		</div>
+	</div>
+	<div class="col-md-4" id="respuestaAPregunta">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<input type="text" name="" id="modnCodigo_cliente" hidden>
+
+			<input type="text" name="" id="modnCodigo_trabajador" hidden>
+
+			<input type="text" name="" id="codigoEmpresa" hidden>
+			<div class="form-group" id="group-modTelefono">
+			<label for="modTelefonoMovil">Telefono movil</label>
+			<input type="text" name="" class="form-control" id="modTelefonoMovil">
+			</div>
+			<div class="form-group">
+			<h3>Mi ubicacion</h3>
+			<label for="departamento">Departamento</label>
+			<select id="departamento" class="form-control">
+			<option></option>
+			</select>
+			</div>
+			<div class="form-group">
+			<label for="provincia">Provincia</label>
+			<select id="provincia" class="form-control">
+			<option></option>
+			</select>
+			</div>
+			<div class="form-group">
+			<label for="distrito">Distrito</label>
+			<select id="distrito" class="form-control">
+			<option></option>
+			</select>
+			</div>
+			<div class="form-group" id="group-modDomicilio">
+			<label for="modDomicilio">Domicilio</label>
+			<input type="text" name="" class="form-control" id="modDomicilio">
+			</div>
+			<div class="form-group" id="group-modRuc">
+			<label for="modRuc">RUC</label>
+			<input type="text" name="" class="form-control" id="modRuc">
+			</div>
+			<div class="form-group" id="group-modNombreEmpresa">
+			<label for="modNombreEmpresa">Nombre empresa</label>
+			<input type="text" name="" id="modNombreEmpresa" class="form-control" disabled>
+			</div>
+			<div class="form-group" id="group-modSalario">
+			<label for="modSalario">Salario</label>
+			<input type="text" name="" class="form-control" id="modSalario">
+			</div>
+			<div class="form-group">
+			<div class="row">
+			<div class="col-md-6">
+			<button type="button" class="btn btn-danger btn-lg btn-block" id="btn-cancelar-modificacion">Cancelar</button>
+			</div>
+			<div class="col-md-6">
+			<button type="button" class="btn btn-success btn-lg btn-block" id="btn-modificar-modificacion">Modificar</button>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+			
+	</div>
+</div>

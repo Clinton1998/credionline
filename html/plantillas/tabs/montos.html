@@ -1,0 +1,103 @@
+<div id="contenedorImagenFondoMontos">
+	<div class="row">
+	<div class="col-md-11 col-md-offset-1">
+		<h1 class="text-primary">Calcula tu crédito</h1>
+		<h3 class="text-success">Interés mensual: 9%</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-5 col-md-offset-1">
+		<div class="panel panel-success">
+		<div class="panel-heading">
+		<h2 class="panel-title">Ingresa según lo que quieres</h2>
+		</div>	
+		<div class="panel-body">
+			<label for="monto">¿Cuánto dinero necesitas?</label>
+			<div class="row" id="group-monto">
+				<div class="col-md-2">
+					<button type="button" class="btn btn-lg btn-danger" id="btn-quitarMonto"><span class="glyphicon glyphicon-minus"></span></button>
+				</div>
+				<div class="col-md-8">
+					<input type="text" name="" class="form-control input-lg" id="monto" onkeypress="return controlarSoloNumeros(event)" disabled value="14000">
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-lg btn-success" id="btn-agregarMonto"><span class="glyphicon glyphicon-plus"></span></button>
+				</div>
+			</div>
+			<div class="form-group" id="group-monto">
+				
+			</div>
+				<label>Mueve para seleccionar la cantidad</label>
+			<div class="input-group">
+
+				<span class="input-group-addon">S/. 3000</span>
+				<input type="range" name="" id="rangoMonto" class="form-control" min="3" max="25">
+				<span class="input-group-addon">S/. 25000</span>
+			</div>
+			<div class="form-group">
+				<label for="plazo">Plazo</label>
+				<select id="plazo" class="form-control">
+					<option value="30">30 dias</option>
+					<option value="60">60 dias</option>
+					<option value="90">90 dias</option>
+					<option value="120">120 dias</option>
+					<option value="150">150 dias</option>
+					<option value="180">180 dias</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>¿Cual es el destino de tu credito?</label>
+				<select class="form-control" id="destino">
+					<option value="seleccione">Seleccione</option>
+					<option value="Viaje">Viaje</option>
+					<option value="Decoración">Decoracion</option>
+					<option value="Mudanza">Mudanza</option>
+					<option value="Matrimonio">Matrimonio</option>
+					<option value="Celebración">Celebracion</option>
+					<option value="Gastos medicos">Gastos medicos</option>
+				</select>
+			</div>
+				<button type="button" class="btn btn-success btn-lg btn-block" id="btn-siguiente-verificacion">Solicitar</button>
+		</div>
+		</div>
+	</div>
+	<div class="col-md-5">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h4 class="panel-title">Las cuentas claras, valor a pagar</h4>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					
+						<table class="table table-hover" id="montosCalculados">
+							<tr>
+								<td>Monto solicitado</td>
+								<td id="pMontoSolicitado">S/.  14000</td>
+							</tr>
+							<tr>
+								<td>Interés</td>
+								<td id="pInteres"><span id="contenido">S/. 1260 </span><span class="glyphicon glyphicon-exclamation-sign" data-toggle="tooltip" title="Te informamos que la taza de interes es 9%(INTERES COMPUESTO)"></span></td>
+							</tr>
+							<tr>
+								<td>Sub Total</td>
+								<td id="pSubTotal">S/. 15260</td>
+							</tr>
+							<tr>
+								<td>IVA</td>
+								<td id="pIva">S/. 2746.8</td>
+							</tr>
+							<tr class="info">
+								<td>Total a pagar</td>
+								<td id="pTotalAPagar">S/.   18006.8</td>
+							</tr>
+						</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+

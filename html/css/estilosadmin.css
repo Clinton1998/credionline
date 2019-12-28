@@ -1,0 +1,86 @@
+#grupoCambiable{
+	font-size: 20px;
+	font-weight: bold;
+}
+#grupoCambiable a{
+	padding: 0px 10px;
+	margin: 0px;
+	margin-right: 10px;
+	padding-top: 10px;
+	color: black;
+}
+#grupoCambiable a span{
+	color: black;
+}
+#nombreColor{
+	color: black;
+}
+.tarjeta{
+	border-radius: 10px;
+	padding: 5px 10px;
+	font-size: 25px;
+
+}
+.tarjeta:hover{
+	cursor: pointer;
+	
+	padding: 6px 11px;
+}
+.contador{
+	font-weight: bold;
+	font-size: 50px;
+}
+.tabla-titulo{
+	padding: 10px 5px;
+	border-radius: 1px;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+#resultado{
+	margin-top: 30px;
+}
+
+#div1{
+	overflow: scroll;
+	height: 270px;
+	width: 100%;
+}
+#div1 table{
+
+}
+#tablaMasInfo table td:nth-child(1){
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+}
+#masInfoSolicitudes table td:nth-child(1){
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+}
+.dato-clientes:hover{
+	cursor:pointer;
+	font-weight: bold;
+}
+
+/*.dato-solicitudes:hover{
+	cursor:pointer;
+	font-weight: bold;
+}*/
+
+#contadores{
+
+	font-weight: bold;
+	font-size: 16px;
+}
+#contadores span{
+	font-size: 25px;
+}
+#contadores div[class^="col"]:hover{
+	cursor:pointer;
+	background-color: #DFF0D8;
+}
+#fechaRegistro{
+	font-weight: bold;
+	font-size: 18px;
+}

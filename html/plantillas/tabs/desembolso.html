@@ -1,0 +1,45 @@
+<div id="contenedorFondoDesembolso">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<h1 class="text-primary">¡Ya falta poco!</h1>
+		</div>
+	</div>
+
+
+<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<span>Rellena tus datos para el desembolso respectivo</span>
+					</div>
+					<div class="panel-body">
+						<div class="form-group" id="group-banco">
+							<label for="banco">Banco</label>
+							<select id="banco" class="form-control">
+								<option value="Seleccione">Seleccione</option>
+								<option value="BCP">BCP</option>
+								<option value="Interbank">Interbank</option>
+								<option value="BBVA Continental">BBVA Continental</option>
+								<option value="Banco pichincha">Banco pichincha</option>
+								<option value="MiBanco">MiBanco</option>
+								<option value="Scotiabank Perú">Scotiabank Perú</option>
+							</select>
+						</div>
+						<div class="form-group" id="group-tipoDeCuenta">
+							<label for="tipoDeCuenta">Tipo de cuenta</label>
+							<select class="form-control" id="tipoDeCuenta">
+								<option value="Seleccione">Seleccione</option>
+								<option value="Corriente">Corriente</option>
+								<option value="De ahorros">De ahorros</option>
+								<option value="Maestra">Maestra</option>
+							</select>
+						</div>
+						<div class="form-group" id="group-numeroDeCuenta">
+							<label for="numeroDeCuenta">N° de cuenta</label>
+							<input type="text" name="" class="form-control" id="numeroDeCuenta" onkeypress="return controlarSoloNumeros(event)">
+						</div>
+						<button type="button" class="btn btn-success btn-block btn-lg" id="btn-siguiente-desembolso">Aceptar</button>
+					</div>
+				</div></div>
+			</div>
+</div>

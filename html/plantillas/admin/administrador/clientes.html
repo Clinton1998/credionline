@@ -1,0 +1,187 @@
+<div class="container">
+  <div class="row">
+     <div class="col-md-8 col-md-offset-2">
+     <div class="panel panel-primary">
+       <div class="panel-body">
+         <div  class="tabla-titulo bg-primary" style="padding-bottom: 0px;">
+           <div class="row" >
+             <div class="col-md-5">
+               CLIENTES DE CREDIONLINE
+             </div>
+             <div class="col-md-7">
+                <div class="form-group">
+                  <form class="form-inline" action="/action_page.php">
+                  <div class="form-group">
+                    <label for="nombre">Buscar por nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Escriba">
+                  </div>
+                </div>
+             </div>
+           </div>
+         </div>
+         <div class="table-responsive" id="div1">
+          <table class="table table-bordered text-center table-hover table-condensed">
+            <tr id="filasClientes">
+              <th>DNI</th>
+              <th>Nombre</th>
+              <th>Apellido paterno</th>
+              <th>Apellido materno</th>
+              <th>Registro</th>
+              <th>Opciones</th>
+            </tr>
+          </table>
+       </div>
+       </div>
+     </div>
+   </div>
+
+ </div>
+</div>
+ <!-- ventana modal para mostrar mas informacion acerca del cliente que se registro-->
+ <div id="mimodalmasinformacion" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Más informacion</h4>
+      </div>
+      <div class="modal-body" id="modalPrincipal">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-8">
+            <label class="text-rigth" id="fechaRegistro">Fecha de registro: <span id="infoFechaRegistro"></span></label>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <span class="panel-title">Datos personales</span>
+          </div>
+          <div class="panel-body">
+
+            <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="">DNI</label>
+              <input type="text" name="" disabled class="form-control" id="infoDni">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Nombre</label>
+              <input type="text" name="" disabled class="form-control" id="infoNombre">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Apellido paterno</label>
+              <input type="text" name="" disabled class="form-control" id="infoApellidoPaterno">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Apellido materno</label>
+              <input type="text" name="" disabled class="form-control" id="infoApellidoMaterno">
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" name="" disabled class="form-control" id="infoEmail">
+            </div>
+          </div>
+
+           <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Telefono movil</label>
+              <input type="text" name="" disabled class="form-control" id="infoTelefonoMovil">
+            </div>
+          </div>
+
+           <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Departamento</label>
+              <input type="text" name="" disabled class="form-control" id="infoDepartament">
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Provincia</label>
+              <input type="text" name="" disabled class="form-control" id="infoProvincia">
+            </div>
+          </div>
+
+           <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Distrito</label>
+              <input type="text" name="" disabled class="form-control" id="infoDistrito">
+            </div>
+          </div>
+
+            <div class="col-md-3">
+            <div class="form-group">
+              <label for="">Domicilio</label>
+              <input type="text" name="" disabled class="form-control" id="infoDomicilio">
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <span class="panel-title">Datos laborales</span>
+          </div>
+          <div class="panel-body">
+                  <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="">RUC</label>
+              <input type="text" name="" disabled class="form-control" id="infoRuc">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="">Nombre empresa</label>
+              <input type="text" name="" disabled class="form-control" id="infoNombreEmpresa">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="">Salario</label>
+              <input type="text" name="" disabled class="form-control" id="infoSalario">
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body" id="contadores">
+            <div class="row">
+              <div class="col-md-3" id="consultarSolicitados">
+               Solicitados <span class="label label-success" id="infoContSolicitados">10</span> 
+              </div>
+
+              <div class="col-md-3" id="consultarAprobados">
+                Aprobados <span class="label label-success" id="infoContAprobados">0</span>
+              </div>
+
+              <div class="col-md-3" id="consultarDesembolsados">
+               Desembolsados <span class="label label-success" id="infoContDesembolsados">0</span> 
+              </div>
+              <div class="col-md-3" id="consultarVigentes">
+               Vigentes <span class="label label-success" id="infoContVigentes">0</span>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+</div>

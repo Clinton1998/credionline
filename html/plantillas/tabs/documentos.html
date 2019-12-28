@@ -1,0 +1,49 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<div class="panel panel-info">
+			<div class="panel-body" style="padding-left: 50px;">
+				
+		<h1 class="text-primary">Documentos necesarios</h1>
+		<ul>
+		<li>Documento de descuento firmado</li>
+		<li>Copia de DNI</li>
+		<li>Ultima boleta</li>
+		</ul>
+		
+		<br>
+		<div class="row">
+			<form id="formularioDocumentos" enctype="multipart/form-data" method="post">
+			<div class="col-md-6">
+			<div id="group-file-upload-descuento">
+				<label for="file-upload-descuento" class="subir">
+			<i class="fas fa-cloud-upload-alt"></i><span class="glyphicon glyphicon-upload"></span> Subir documento de descuento
+			</label><br>
+			<input id="file-upload-descuento" onchange='cambiarUploadDescuento()' type="file" style='display: none;'/>
+			<div id="info-descuento"></div>
+			</div>
+
+			<div id="group-file-upload-dni">
+			<label for="file-upload-dni" class="subir">
+			<i class="fas fa-cloud-upload-alt"></i><span class="glyphicon glyphicon-upload"></span>Subir copia de DNI
+			</label><br>
+			<input id="file-upload-dni" onchange='cambiarUploadDni()' type="file" style='display: none;'/>
+			<div id="info-dni"></div>	
+			</div>
+
+			
+			<div id="group-file-upload-boleta">
+			<label for="file-upload-boleta" class="subir">
+			<i class="fas fa-cloud-upload-alt"></i><span class="glyphicon glyphicon-upload"></span> Subir ultima boleta
+			</label><br>
+			<input id="file-upload-boleta" onchange='cambiarUploadBoleta()' type="file" style='display: none;'/>
+			<div id="info-boleta"></div>
+			</div>
+			<button type="button" class="btn btn-success btn-primary btn-lg" id="btn-siguiente-documentos">Continuar</button>
+			</form>
+
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+</div>
